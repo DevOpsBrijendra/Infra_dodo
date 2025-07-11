@@ -19,3 +19,11 @@ resource "azurerm_resource_group" "example" {
     environment = "Terraform"
   }
 }
+resource "azurerm_resource_group" "example2" {
+  name     = "rg-dodo2"
+  location = "West Europe"
+
+  tags = {
+    environment = "Terraform"
+  }
+}
